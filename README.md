@@ -11,7 +11,7 @@ Deploying a project involves several steps to ensure that your application can b
 - Java 17 or lastest 
 - Spring Boot 3.2
 
-#### 3. After the project runs, the following Postman collection could be used to prove the several services.
+#### 3. After the project runs, the following Postman collection could be used to prove the several services *[postman](https://github.com/jlopez34/equifaxTest/blob/master/Equifax.postman_collection.json)*.
 
 #### 4. According to step two, It is necessary to download the frontend project; that project is localized in the following path *[login-home](https://github.com/jlopez34/equifaxTest/tree/master/login-home)*.
 - Angular 17
