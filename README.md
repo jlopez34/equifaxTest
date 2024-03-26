@@ -13,3 +13,13 @@ Deploying a project involves several steps to ensure that your application can b
 
 #### 3. After the project runs, the following Postman collection could be used to prove the several services.
 
+#### 4. According to step two, It is necessary to download the frontend project; that project is localized in the following path *[login-home](https://github.com/jlopez34/equifaxTest/tree/master/login-home)*.
+- Angular 17
+
+#### 5. After the project loads on the preference editor, it is required to use the following instructions:
+```
+npm install
+ng serve
+```
+#### 5. Finally, It should open the preference browser and access to endpoint: [http://localhost:4200/home ](http://localhost:4200/home)
+
