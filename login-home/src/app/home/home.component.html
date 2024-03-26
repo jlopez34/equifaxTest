@@ -1,0 +1,37 @@
+<div class="container">
+  <header class="jumbotron">
+    <p> {{ content }}</p>
+
+    <form
+    name="form"
+    (ngSubmit)="f.form.valid"
+    #f="ngForm"
+    novalidate
+  >
+    <div class="form-group">
+      <label for="file">File</label>
+      <input
+        type="file"
+        class="form-control"
+        name="file"
+        [(ngModel)]="form.file"
+        required
+        minlength="6"
+        #file="ngModel"
+        [ngClass]="{ 'is-invalid': f.submitted && file.errors }"
+      />
+      @if (file.errors && f.submitted) {
+      <div class="invalid-feedback">
+        @if (file.errors['required']) {
+        <div>File is required</div>
+        }
+      </div>
+      }
+    </div>
+    <div class="btn-group">
+      <button type="button" class="btn btn-primary">Load</button>
+      <button type="button" class="btn btn-default">Search</button>
+    </div>
+  </form>
+  </header>
+</div>
